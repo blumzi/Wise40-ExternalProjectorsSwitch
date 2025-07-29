@@ -18,7 +18,14 @@ namespace ExternalProjectorsSwitch
         {
             short vid = 0x5131, pid = 0x2007;
 
-            HidDevice device = HidDevices.Enumerate(vid, pid).FirstOrDefault() ?? throw new Exception($"Could not find an HID device with vid=0x{vid:X}, pid=0x{pid:X}");
+            HidDevice device = HidDevices.Enumerate(vid, pid).FirstOrDefault();
+            if (device == null) {
+                MessageBox.Show("Cannot find the USB dongle with the relay!\n\n   Is it plugged in?",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                Environment.Exit(1);
+            }
 
             this.device = device;
             this.device.OpenDevice();
@@ -49,7 +56,8 @@ namespace ExternalProjectorsSwitch
 
         ~SSRSwitch()
         {
-            this.device.CloseDevice();
+            if (this.device != null)
+                this.device.CloseDevice();
         }
     }
 
