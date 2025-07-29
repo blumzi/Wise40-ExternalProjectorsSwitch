@@ -52,3 +52,4 @@ project.assets.json
 # Publish outputs
 publish/
 
+*.pfx
