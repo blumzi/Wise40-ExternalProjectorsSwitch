@@ -38,8 +38,9 @@
             this.buttonOn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.buttonOn.ForeColor = System.Drawing.Color.White;
-            this.buttonOn.Location = new System.Drawing.Point(24, 2);
+            this.buttonOn.Location = new System.Drawing.Point(12, 12);
             this.buttonOn.Name = "buttonOn";
+            this.buttonOn.Padding = new System.Windows.Forms.Padding(5);
             this.buttonOn.Size = new System.Drawing.Size(269, 170);
             this.buttonOn.TabIndex = 0;
             this.buttonOn.Text = "ON";
@@ -53,8 +54,9 @@
             this.buttonOff.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.buttonOff.ForeColor = System.Drawing.Color.White;
-            this.buttonOff.Location = new System.Drawing.Point(24, 178);
+            this.buttonOff.Location = new System.Drawing.Point(12, 188);
             this.buttonOff.Name = "buttonOff";
+            this.buttonOff.Padding = new System.Windows.Forms.Padding(5);
             this.buttonOff.Size = new System.Drawing.Size(269, 170);
             this.buttonOff.TabIndex = 1;
             this.buttonOff.Text = "OFF";
@@ -65,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 359);
+            this.ClientSize = new System.Drawing.Size(294, 375);
             this.Controls.Add(this.buttonOff);
             this.Controls.Add(this.buttonOn);
             this.Name = "SwitchForm";
