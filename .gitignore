@@ -53,3 +53,4 @@ project.assets.json
 publish/
 
 *.pfx
+/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
