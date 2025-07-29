@@ -14,7 +14,8 @@ Source: "C:\Users\User\source\repos\ExternalProjectorsSwitch\bin\Debug\*"; DestD
 Source: "C:\Users\User\source\repos\ExternalProjectorsSwitch\installer\onoff.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{group}\Wise-Projectors"; Filename: "{app}\ExternalProjectorsSwitch.exe"; IconFilename: "{app}\onoff.ico"
+Name: "{group}\Wise-Projectors"; Filename: "{app}\ExternalProjectorsSwitch.exe"; IconFilename: "{app}\onoff.ico"; Tasks: desktopicon
+Name: "{commondesktop}\Wise-Projectors"; Filename: "{app}\ExternalProjectorsSwitch.exe"; IconFilename: "{app}\onoff.ico"; Tasks: desktopicon
 Name: "{group}\Uninstall Wise-Projectors"; Filename: "{uninstallexe}"
 
 [Tasks]

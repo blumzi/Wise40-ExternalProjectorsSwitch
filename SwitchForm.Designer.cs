@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SwitchForm));
             this.buttonOn = new System.Windows.Forms.Button();
             this.buttonOff = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -70,6 +71,7 @@
             this.ClientSize = new System.Drawing.Size(294, 375);
             this.Controls.Add(this.buttonOff);
             this.Controls.Add(this.buttonOn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SwitchForm";
             this.Text = "Projectors";
             this.ResumeLayout(false);
